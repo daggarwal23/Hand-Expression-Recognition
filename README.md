@@ -1,24 +1,48 @@
-# Hand-Gestures-Recognition  
-Hand Gestures Recognition using OpenCV, Keras, Convolutional Neural Networks
+# Hand Gesture Recognition
 
-## Required Libraries:
-    - python 3.6.7
-    - openCV (pip install opencv-python)
-    - matplotlib
-    - keras
-    - sklearn
+## Overview
+This project focuses on recognizing hand gestures using OpenCV, Keras, and Convolutional Neural Networks (CNNs). The system captures live video feed, segments the hand region, and classifies gestures in real-time.
 
-## Repo Content:
-- **cam_run.py** : Contains the main method which would start the Video Capture, segment the hand region, pass on the thresholded image to the CNN model, and predict the hand gesture from LIVE camera feed.
+## Dataset
+- **Folder**: `my_dataset`
+- **Description**: The dataset includes images of 6 different hand gestures.
+- **Gesture Types**:
+  - `BLANK`
+  - `OK`
+  - `THUMBSUP`
+  - `THUMBSDOWN`
+  - `PUNCH`
+  - `HIGH-FIVE`
 
-- **train_gestures.ipynb** : The Jupyter notebook which contains the data loading, creation and training of the 2D Convolutional Neural Network. 
+## Project Objective
+- **Build a Real-Time Hand Gesture Recognition System**:
+  - Capture live video feed using OpenCV.
+  - Segment the hand region and preprocess the image.
+  - Use a CNN model to classify hand gestures in real-time.
 
-- **my_dataset** : The Dataset consists of 6 types of gestures. Mainly, 
-  - BLANK
-  - OK
-  - THUMBSUP
-  - THUMBSDOWN
-  - PUNCH
-  - HIGH-FIVE
+## Project Structure
+- **File**: `cam_run.py`
+  - Contains the main script for starting video capture, segmenting the hand region, and predicting gestures using the trained CNN model from the live camera feed.
 
+- **File**: `train_gestures.ipynb`
+  - Jupyter notebook for data loading, and training of a 2D Convolutional Neural Network (CNN) on the gesture dataset.
 
+## Required Libraries
+- Python 3.6.7
+- OpenCV (`pip install opencv-python`)
+- Matplotlib
+- Keras
+- scikit-learn
+
+## How to Run the Project
+1. Clone the repository.
+2. Ensure you have all required libraries installed.
+3. Prepare your dataset and place it in the `my_dataset` folder.
+4. Train the CNN model using `train_gestures.ipynb`.
+5. Run `cam_run.py` to start the real-time gesture recognition.
+
+## Requirements
+- Install necessary libraries using:
+
+```bash
+pip install opencv-python matplotlib keras scikit-learn
