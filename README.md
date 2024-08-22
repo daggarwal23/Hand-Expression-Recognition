@@ -4,7 +4,7 @@
 This project focuses on recognizing hand gestures using OpenCV, Keras, and Convolutional Neural Networks (CNNs). The system captures live video feed, segments the hand region, and classifies gestures in real-time.
 
 ## Dataset
-- **Folder**: `my_dataset`
+- **Link**: https://www.kaggle.com/datasets/sarjit07/hand-gesture-recog-dataset
 - **Description**: The dataset includes images of 6 different hand gestures.
 - **Gesture Types**:
   - `BLANK`
